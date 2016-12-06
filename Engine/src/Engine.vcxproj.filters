@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Rendering System">
+      <UniqueIdentifier>{aab5611d-18e8-49eb-aa01-a0caa6d6599c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App Layer">
+      <UniqueIdentifier>{c4199a61-86bf-42ae-b27b-6d2678f820fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{9ebc2e9e-daa8-468f-bda0-75a27a388716}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Management">
+      <UniqueIdentifier>{e8a63e08-b297-415b-a135-08b71e1504d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene Management">
+      <UniqueIdentifier>{4b68cb3f-89f6-414b-848c-13ee4974ca44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App Layer\Head Files">
+      <UniqueIdentifier>{28ef211c-bb31-4992-956b-d61824228d63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App Layer\Source Files">
+      <UniqueIdentifier>{100e2e44-c3cb-416d-b560-99c70fda8577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering System\Head Files">
+      <UniqueIdentifier>{942f396e-1609-4eab-954a-dce2cc794c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering System\Source Files">
+      <UniqueIdentifier>{d97633fd-9302-4fe7-8354-584e1bd9b2a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Head Files">
+      <UniqueIdentifier>{0d009fe6-168c-459d-a8f5-79527edf4a38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Source Files">
+      <UniqueIdentifier>{972cb772-149d-4f92-9687-08f469b697cc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Export.h" />
+    <ClInclude Include="App Layer\App3DFramework.h">
+      <Filter>App Layer\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering System\Renderable.h">
+      <Filter>Rendering System\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Log.h">
+      <Filter>Core\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Context.h">
+      <Filter>Core\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Util.h">
+      <Filter>Core\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Singleton.h">
+      <Filter>Core\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering System\RenderSettings.h">
+      <Filter>Rendering System\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering System\RenderEngine.h">
+      <Filter>Rendering System\Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering System\RenderEngineFactory.h">
+      <Filter>Rendering System\Head Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="App Layer\App3DFramework.cpp">
+      <Filter>App Layer\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering System\Renderable.cpp">
+      <Filter>Rendering System\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Context.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Singleton.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering System\RenderEngine.cpp">
+      <Filter>Rendering System\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering System\RenderEngineFactory.cpp">
+      <Filter>Rendering System\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Log.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
