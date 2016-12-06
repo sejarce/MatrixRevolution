@@ -71,6 +71,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\bin\win_x64</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -99,7 +100,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;ENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -162,7 +163,6 @@ copy "$(OutDir)$(TargetName).lib" "$(SolutionDir)..\lib\"</Command>
     <ClInclude Include="Rendering System\RenderEngine.h" />
     <ClInclude Include="Rendering System\RenderEngineFactory.h" />
     <ClInclude Include="Rendering System\RenderSettings.h" />
-    <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App Layer\App3DFramework.cpp" />
@@ -183,7 +183,6 @@ copy "$(OutDir)$(TargetName).lib" "$(SolutionDir)..\lib\"</Command>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Engine.cpp" />
     <ClCompile Include="Rendering System\Renderable.cpp" />
     <ClCompile Include="Rendering System\RenderEngine.cpp" />
     <ClCompile Include="Rendering System\RenderEngineFactory.cpp" />

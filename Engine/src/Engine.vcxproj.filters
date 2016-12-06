@@ -39,7 +39,6 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h" />
     <ClInclude Include="Export.h" />
     <ClInclude Include="App Layer\App3DFramework.h">
       <Filter>App Layer\Head Files</Filter>
@@ -71,7 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="Engine.cpp" />
     <ClCompile Include="App Layer\App3DFramework.cpp">
       <Filter>App Layer\Source Files</Filter>
     </ClCompile>
