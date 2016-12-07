@@ -18,13 +18,21 @@ namespace Cloudream{
 	/////////////////////////////////////////////////////////////////////////////////
 	struct RenderSettings
 	{
+		RenderSettings()
+			: hide_win(false), full_screen(false),
+			left(0), top(0), width(1280), height(720)
+		{
+		}
+
 		bool	hide_win;
 		bool	full_screen;
 		int		left;
 		int		top;
 		int		width;
-		int		height;
-	};
+		int		height; 
+
+
+	}; 
 }
 
 #endif
